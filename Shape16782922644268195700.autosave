@@ -1,0 +1,13 @@
+abstract class Shape {
+  float x, y;
+  Shape(float x, float y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  //abstract void display();
+  
+  void display(){
+    text("I am a Shape",50,50);
+  }
+}
