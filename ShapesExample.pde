@@ -1,7 +1,11 @@
 
 Shape[] shapes = new Shape[4];
+
+
+
 void setup() {
   size(400, 400);
+  
   shapes[0] = new Circle(100, 100, 50);
   shapes[1] = new Rectangle(20, 20, 80, 40);
   shapes[2] = new Circle(300, 300, 30);
@@ -9,6 +13,9 @@ void setup() {
 }
 void draw() {
   background(220);
+
+  shapes[3].colour = color(0,0,255);
+  
   
   for (Shape shape: shapes) {
     shape.display();  // Polymorphic method call

@@ -7,7 +7,9 @@ class Rectangle extends Shape {
     this.height = height;
   }
    
-  void display2() {
+  void display() {
     rect(x, y, width, height);
   }
+
+  
 }

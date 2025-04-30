@@ -1,8 +1,10 @@
 class Triangle extends Shape {
   float p1x, p1y, p2x, p2y, p3x, p3y;
+  color colour;
 
   Triangle(float p1x, float p1y, float p2x, float p2y, float p3x, float p3y) {
-    super(p1x, p1y);
+    // super(p1x, p1y);
+    super(p1x, p1y, p2x, p2y, p3x, p3y);
     // this.width = width;
     // this.height = height;
     this.p1x=p1x;
@@ -14,6 +16,10 @@ class Triangle extends Shape {
   }
 
   void display() {
+    fill(this.colour);
     triangle(p1x, p1y, p2x, p2y, p3x, p3y);
+  }
+  void move() {
+    // ...
   }
 }
