@@ -25,7 +25,7 @@ abstract class Shape {
   }
   //getter for x
   float getX(){
-    return this.x
+    return this.x;
   }
   //setter for Y
   void setY(float y){
@@ -33,15 +33,15 @@ abstract class Shape {
   }
   //getter for y
   float getY(){
-    return this.y
+    return this.y;
   }
   //setter for colour
-  void setColour(float colour){
-    this.colour = color(colour);
+  void setColour(color colour){
+    this.colour = colour;
   }
   //getter for colour
   float getColour(){
-    return this.colour
+    return this.colour;
   }
   
   
