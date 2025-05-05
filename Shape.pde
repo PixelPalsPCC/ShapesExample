@@ -1,7 +1,7 @@
 abstract class Shape {
   float x, y;
   float p1x, p1y, p2x, p2y, p3x, p3y;
-  float colour;
+  color colour;
 
   Shape(float x, float y) {
     this.x = x;
@@ -37,7 +37,7 @@ abstract class Shape {
   }
   //setter for colour
   void setColour(float colour){
-    this.colour = colour;
+    this.colour = color(colour);
   }
   //getter for colour
   float getColour(){
